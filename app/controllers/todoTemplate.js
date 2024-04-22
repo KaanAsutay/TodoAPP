@@ -19,7 +19,9 @@ module.exports = {
         // })
 
         // from /public/ folder:
-        res.render('todoList')
+        // res.render('todoList')
+        // Send data to template:
+        res.render('todoList', { data })
 
     },
 
