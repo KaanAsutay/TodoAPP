@@ -17,6 +17,7 @@ const PORT = process.env.PORT || 8000;
 // https://github.com/mde/ejs/wiki/Using-EJS-with-Express
 
 app.set('view engine', 'ejs')
+// Default folder: './views'
 
 /* ------------------------------------------------------- */
 // Accept json data & convert to object:
