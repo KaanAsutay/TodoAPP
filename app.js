@@ -18,6 +18,7 @@ const PORT = process.env.PORT || 8000;
 
 app.set('view engine', 'ejs')
 // Default folder: './views'
+app.set('views', './public')
 
 /* ------------------------------------------------------- */
 // Accept json data & convert to object:
@@ -32,6 +33,7 @@ app.all('/', (req, res) => {
 
 })
 
+app.use('/view', require('./app/routes/todoTemplate'))
 app.use('/api', require('./app/routes/todo'))
 
 // DatabaseConnection:
