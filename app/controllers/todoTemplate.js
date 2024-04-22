@@ -11,13 +11,16 @@ module.exports = {
 
     list: async (req, res) => {
 
-        // const data = await Todo.findAll()
         const data = await Todo.findAndCountAll()
         
-        res.status(200).send({
-            error: false,
-            result: data
-        })
+        // res.status(200).send({
+        //     error: false,
+        //     result: data
+        // })
+
+        // from /public/ folder:
+        res.render('todoList')
+
     },
 
     // CRUD METHODS:
