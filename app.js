@@ -24,6 +24,14 @@ app.set('view engine', 'ejs')
 app.use(express.json())
 
 // Router:
+
+app.all('/', (req, res) => {
+
+    // call ejs file in ./views/
+    res.render('index.ejs')
+
+})
+
 app.use('/api', require('./app/routes/todo'))
 
 // DatabaseConnection:
