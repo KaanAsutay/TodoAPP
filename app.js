@@ -24,7 +24,7 @@ app.set('view engine', 'ejs')
 app.use(express.json())
 
 // Router:
-app.use(require('./app/routes/todo'))
+app.use('/api', require('./app/routes/todo'))
 
 // DatabaseConnection:
 const { dbConnection } = require('./app/dbConnection')
