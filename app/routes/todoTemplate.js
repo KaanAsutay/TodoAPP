@@ -28,10 +28,10 @@ const todoTemplate = require('../controllers/todoTemplate')
 
 // router.get('/:id/delete', todoTemplate.delete)
 
-// router.all('/', todoTemplate.list)
-// router.all('/create', todoTemplate.create)
-// router.all('/:id', todoTemplate.read)
-// router.all('/:id/update', todoTemplate.update)
-// router.all('/:id/delete', todoTemplate.delete)
+router.all('/', todoTemplate.list)
+router.all('/create', todoTemplate.create)
+router.all('/:id', todoTemplate.read)
+router.all('/:id/update', todoTemplate.update)
+router.all('/:id/delete', todoTemplate.delete)
 
 module.exports = router
