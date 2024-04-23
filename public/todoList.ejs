@@ -33,12 +33,12 @@
                 <tbody>
                     <% for (let todo of data.rows) {  %>
                         <tr>
-                            <td># <%=</td>
-                            <td>Test Title</td>
-                            <td>Test Description</td>
-                            <td>Norm</td>
-                            <td>No</td>
-                            <td>05/11/2023</td>
+                            <td># <%= todo.id %></td>
+                            <td><%= todo.title %></td>
+                            <td><%= todo.description %></td>
+                            <td><%= todo.priority %></td>
+                            <td><%= todo.isDone %></td>
+                            <td><%= todo.createdAt %></td>
                             <td>
                                 <a class="btn btn-sm btn-secondary" href="/view/id">Read</a>
                                 <a class="btn btn-sm btn-info" href="/view/id/update">Update</a>
