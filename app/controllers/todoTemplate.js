@@ -7,6 +7,13 @@ require('express-async-errors')
 
 const Todo = require('../models/todo')
 
+const priority = {
+    '1': 'High',
+    '0': 'Normal',
+    '-1': 'Low'
+} 
+// priority[0]
+
 module.exports = {
 
     list: async (req, res) => {
