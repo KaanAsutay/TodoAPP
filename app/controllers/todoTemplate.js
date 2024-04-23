@@ -25,6 +25,7 @@ module.exports = {
         //     result: data
         // })
 
+        // Template:
         // from /public/ folder:
         // res.render('todoList')
         // Send data to template:
@@ -59,7 +60,8 @@ module.exports = {
         //     result: data
         // })
 
-        res.render('todoRead', { data, priority })
+        // Template:
+        res.render('todoRead', { todo: data, priority })
     
     },
 
