@@ -31,19 +31,22 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td># 1</td>
-                        <td>Test Title</td>
-                        <td>Test Description</td>
-                        <td>Norm</td>
-                        <td>No</td>
-                        <td>05/11/2023</td>
-                        <td>
-                            <a class="btn btn-sm btn-secondary" href="/view/id">Read</a>
-                            <a class="btn btn-sm btn-info" href="/view/id/update">Update</a>
-                            <a class="btn btn-sm btn-danger" href="/view/id/delete" onclick="return confirm('Are you sure?')">Delete</a>
-                        </td>
-                    </tr>
+                    <% for (let todo of data.rows) {  %>
+                        <tr>
+                            <td># <%=</td>
+                            <td>Test Title</td>
+                            <td>Test Description</td>
+                            <td>Norm</td>
+                            <td>No</td>
+                            <td>05/11/2023</td>
+                            <td>
+                                <a class="btn btn-sm btn-secondary" href="/view/id">Read</a>
+                                <a class="btn btn-sm btn-info" href="/view/id/update">Update</a>
+                                <a class="btn btn-sm btn-danger" href="/view/id/delete" onclick="return confirm('Are you sure?')">Delete</a>
+                            </td>
+                        </tr>
+                    <%}  %>
+                    
                 </tbody>
             </table>
         </div>
