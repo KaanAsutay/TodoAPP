@@ -24,12 +24,15 @@ app.set('views', './public')
 // Accept json data & convert to object:
 app.use(express.json())
 
-// Router:
+// Accept form data & convert to object:
+app.use(express.urlencoded({ extended: true })) // Allow array-form-elements
 
+// Router:
 app.all('/', (req, res) => {
 
     // call ejs file in ./views/
-    res.render('index.ejs')
+    // res.render('index.ejs')
+    res.render('index')
 
 })
 
